@@ -4,17 +4,6 @@ import * as path from "path";
 const inputPath = path.join(__dirname, "../input/day10.txt");
 const input = fs.readFileSync(inputPath, "utf8");
 
-const example = `
-89010123
-78121874
-87430965
-96549874
-45678903
-32019012
-01329801
-10456732
-`;
-
 const grid = input.split("\n").map((line) => line.split("").map(Number));
 
 const findTrails = (x: number, y: number) => {
